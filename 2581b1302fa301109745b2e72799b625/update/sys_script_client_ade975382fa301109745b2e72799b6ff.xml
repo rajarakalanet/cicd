@@ -3,7 +3,7 @@
         <active>true</active>
         <applies_extended>true</applies_extended>
         <condition/>
-        <description>Sample2d</description>
+        <description>Sample2ddfff</description>
         <field>active</field>
         <global>true</global>
         <isolate_script>true</isolate_script>
@@ -22,7 +22,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ade975382fa301109745b2e72799b6ff</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Sample1</sys_name>
         <sys_overrides/>
         <sys_package display_value="CICD Demo" source="x_823372_cicd_demo">2581b1302fa301109745b2e72799b625</sys_package>
@@ -30,10 +30,10 @@
         <sys_scope display_value="CICD Demo">2581b1302fa301109745b2e72799b625</sys_scope>
         <sys_update_name>sys_script_client_ade975382fa301109745b2e72799b6ff</sys_update_name>
         <sys_updated_by>chandu.sekhar</sys_updated_by>
-        <sys_updated_on>2022-05-17 06:33:33</sys_updated_on>
+        <sys_updated_on>2022-05-17 06:35:16</sys_updated_on>
         <table>incident</table>
         <type>onCellEdit</type>
-        <ui_type>0</ui_type>
+        <ui_type>1</ui_type>
         <view/>
     </sys_script_client>
 </record_update>
