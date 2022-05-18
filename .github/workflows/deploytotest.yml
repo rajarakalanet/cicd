@@ -1,4 +1,4 @@
-run: echo ${{secrets.YOUR_SECRET }} | sed 's/./& /g'
+
 name: Close Pull Request / Deploy to TEST instance
 
 # only trigger on pull request closed event
