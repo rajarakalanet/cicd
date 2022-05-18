@@ -9,7 +9,7 @@ jobs:
   merge_job:
     name: Deploy package
     runs-on: ubuntu-latest
-    # this job will only run if the PR has been merged, not on cancelled request
+    # this job will only run if the PR has been merged, not on cancelled requests
     if: github.event.pull_request.merged == true
     steps:
     - uses: actions/checkout@v2
