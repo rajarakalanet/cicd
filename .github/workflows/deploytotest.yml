@@ -1,4 +1,23 @@
+jobs:
+  debug:
+    name: Debug
+    runs-on: ubuntu-latest
 
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Set up secret file
+      env:
+        DEBUG_PASSWORD: ${{ secrets.NOW_USERNAME }}
+        DEBUG_SECRET_KEY: ${{ secrets.NOW_PASSWORD }}
+      run: |
+        echo $DEBUG_PASSWORD >> secrets.txt
+        echo $DEBUG_SECRET_KEY >> secrets.txt
+
+    - name: Run tmate
+      uses: mxschmitt/action-tmate@v2
+      
 name: Close Pull Request / Deploy to TEST instance
 
 # only trigger on pull request closed event
