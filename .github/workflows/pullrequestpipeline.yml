@@ -1,4 +1,3 @@
-
 name: ServiceNow Pull Request Pipeline
 
 on: 
