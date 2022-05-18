@@ -20,10 +20,10 @@ jobs:
       with:
         versionFormat: detect
       env:
-        snowUsername: ${{ secrets.NOW_USERNAME }}
-        snowPassword: ${{ secrets.NOW_PASSWORD }}
-        snowSourceInstance: ${{ secrets.NOW_DEV_INSTANCE }}
-        appSysID: ${{ secrets.APP_SYS_ID }}
+        snowUsername: GitHub.pipeline
+        snowPassword: SecretP4ssW@rd
+        snowSourceInstance: dev80586
+        appSysID: 2581b1302fa301109745b2e72799b625
           
     - name: Create Tag in repository
       if: ${{ success() && steps.sncicd-publish-app.outputs.newVersion }}
