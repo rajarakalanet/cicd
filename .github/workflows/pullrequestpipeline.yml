@@ -7,7 +7,7 @@ on:
      
 jobs:
   build:
-  # Purpose of this job is to execute ATF on current branch
+  # Purpose of this job is to execute ATF on current branches
     name: Run ATF on dev instance
     runs-on: ubuntu-latest
 
