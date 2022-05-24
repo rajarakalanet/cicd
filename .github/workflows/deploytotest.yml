@@ -24,6 +24,7 @@ jobs:
         snowPassword: SecretP4ssW@rd
         snowSourceInstance: dev80586
         appSysID: 2581b1302fa301109745b2e72799b625
+        appScope: x_823372_cicd_demo
           
     - name: Create Tag in repository
       if: ${{ success() && steps.sncicd-publish-app.outputs.newVersion }}
