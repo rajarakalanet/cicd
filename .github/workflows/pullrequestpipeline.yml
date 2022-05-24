@@ -16,9 +16,9 @@ jobs:
       - name: ServiceNow CI/CD Apply Changes
         uses: ServiceNow/sncicd-apply-changes@1.2.1
         env:
-          snowUsername: ${{ secrets.NOW_USERNAME }}
-          snowPassword: ${{ secrets.NOW_PASSWORD }}
-          snowSourceInstance: ${{ secrets.NOW_DEV_INSTANCE }}
+          snowUsername: GitHub.pipeline
+          snowPassword: SecretP4ssW@rd
+          snowSourceInstance: dev80586
           appSysID: ${{ secrets.APP_SYS_ID }}
 
       - name: Run Tests 
@@ -29,9 +29,9 @@ jobs:
           browserVersion:
           osName:
           osVersion:
-          testSuiteSysId: ${{ secrets.TEST_SUITE_ID }}
+          testSuiteSysId: 67fcab130b01220050192f15d6673a0c
           testSuiteName:
         env:
-          snowUsername: ${{ secrets.NOW_USERNAME }}
-          snowPassword: ${{ secrets.NOW_PASSWORD }}
-          snowInstallInstance: ${{ secrets.NOW_DEV_INSTANCE }}
+          snowUsername: GitHub.pipeline
+          snowPassword: SecretP4ssW@rd
+          snowInstallInstance: dev80586
