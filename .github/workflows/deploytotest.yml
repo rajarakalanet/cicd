@@ -1,6 +1,6 @@
 name: Close Pull Request / Deploy to TEST instance
 
-# only trigger on pull request closed event
+# only trigger on pull request closed events
 on:
   pull_request:
     types: [ closed ]
