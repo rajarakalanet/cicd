@@ -1,2 +1,2 @@
 # cicd
-Repository for cicd
+Repository for cicds
